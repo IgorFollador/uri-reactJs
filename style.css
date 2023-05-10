@@ -1,0 +1,76 @@
+:root {
+    --cor-fundo: #3a3a3a;
+    --cor-sobre-fundo: #ffffff
+}
+
+body {
+    background-color: var(--cor-sobre-fundo);
+
+    padding: 24px;
+    margin: 0 16%;
+    margin-top: 0;
+    
+    font-family: 'OpenDyslexic', 'Roboto', sans-serif;
+}
+
+body div:first-child {
+    /* background-color: var(--cor-fundo); */
+}
+
+#loginFake {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginFake .el{
+    margin-bottom: 10px;
+}
+
+#loginFake input {
+    height: 25px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+#loginFake button {
+    height: 30px;
+    width: 50px;
+    font-weight: 600;
+    border-radius: 16px;
+    border-style: none;
+    background-color: #00cf34;
+    color: #ffffff;
+}
+
+#loginFake button:hover {
+    cursor: pointer;
+}
+
+header, footer {
+    text-align: center;
+}
+
+body header {
+    font-size: 18px;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+th, td {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer.right {
+    text-align: right;
+}
+
+#copyrights {
+    color: var(--cor-fundo);
+}

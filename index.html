@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighScore - Igor Follador</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="title">
+        <p>URI Erechim</p>
+        <h1>Curso de Outono - Projeto HighScore em REACT.js</h1>
+    </header>
+
+    <div>
+        <form id="loginFake" action="">
+            <div class="el">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="el">
+                <label for="game">Jogo:</label>
+                <input type="text" id="game" name="game">
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div>
+        <p>Olá <span id="username">${username}</span></p>
+
+        <h2>Lista de melhores pontuações do jogo <span id="gameName">${projectName}</span></h2>
+    
+        <p>Jogo de aventura de plataforma onde um encanador bate com a cabeça em blocos de tijolo, amassa cogumelos castanhos e se pendura em um poste para içar bandeira para passar de fase.</p>
+    
+    </div>
+
+    <div class="score">
+        <table>
+            <caption>Legenda</caption>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th><b> Jogador</b></th>
+                    <th>Pontuação</th>
+                    <th><b>Tempo</b></th>
+                    <th><b>Jogo</b></th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <th>1°</th>
+                    <td>Emerson</td>
+                    <td>1024</td>
+                    <td>00:30:18</td>
+                    <td>Super Mario World</td>
+                </tr>
+                <tr>
+                    <th>2°</th>
+                    <td>Emerson</td>
+                    <td>1024</td>
+                    <td>00:30:19</td>
+                    <td>Super Mario World</td>
+                </tr>
+                <tr>
+                    <th>3°</th>
+                    <td>Emerson</td>
+                    <td>1024</td>
+                    <td>00:30:20</td>
+                    <td>Super Mario World</td>
+                </tr>    
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <footer class="no-margins right">
+        <p id="copyrights">
+            <i>Projeto desenvolvido </i>no <b>Curso de Javascript + REACT </b>por <q>Igor Follador</q>
+        </p>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
