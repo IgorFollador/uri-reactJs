@@ -4,10 +4,15 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header/Header'
+import WelcomeMessage from '@/components/WelcomeMessage'
+import LoginForm from '@/components/LoginForm'
+import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [userName, setUserName] = useState('');
+  
   return (
     <>
       <Head>
@@ -19,6 +24,10 @@ export default function Home() {
       
       <Header />
 
+      <LoginForm setUserName={setUserName}/>
+
+      <WelcomeMessage userName={userName} />
+      
       <Footer />
     </>
   )
