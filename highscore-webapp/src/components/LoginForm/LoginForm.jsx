@@ -1,9 +1,16 @@
+import { useState } from "react";
 
-export default function LoginForm({setUserName}) {
+export default function LoginForm({userName, setUserName}) {
+
+    const [inputName, setInputName] = useState(userName);
 
     let login = (event) => {
         event.preventDefault();
+        setUserName(inputName);
         console.log('Submit...');
+
+        let parent = event.target;
+        parent.style.display = 'none';
     }
  
     return (
@@ -11,12 +18,8 @@ export default function LoginForm({setUserName}) {
             <form id="loginFake" onSubmit={login}>
 
                 <div className="el">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" onChange={(event)=>{setUserName(event.target.value)}}/>
-                </div>
-                <div className="el">
-                    <label for="game">Jogo:</label>
-                    <input type="text" id="game" name="game" />
+                    <label htmlFor="name">Nome:</label>
+                    <input type="text" id="name" name="name" onChange={(event)=>{setInputName(event.target.value)}}/>
                 </div>
 
                 <button type="submit">Login</button>

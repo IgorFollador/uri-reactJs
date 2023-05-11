@@ -7,6 +7,7 @@ import Header from '@/components/Header/Header'
 import WelcomeMessage from '@/components/WelcomeMessage'
 import LoginForm from '@/components/LoginForm'
 import { useState } from 'react'
+import GameInfo from '@/components/GameInfo'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,10 +25,12 @@ export default function Home() {
       
       <Header />
 
-      <LoginForm setUserName={setUserName}/>
+      <LoginForm userName={userName} setUserName={setUserName}/>
 
       <WelcomeMessage userName={userName} />
       
+      <GameInfo></GameInfo>
+
       <Footer />
     </>
   )
